@@ -3,7 +3,7 @@ print()
 tab = ['-']*3
 lista_verif = []
 
-####Tabuleiro
+# Tabuleiro
 for i in range(3):
     tab[i] = ['-']*3
     print(*tab[i])
@@ -38,15 +38,12 @@ while i != 9 and cont_col != 3 and cont_col2 != 3 and cont_diag != 3 and cont_di
                 if a == lin:
                     if tab[a][b] == ponto:
                         cont_col += 1
-
                 if b == col:
                     if tab[a][b] == ponto:
                         cont_col2 += 1
-
                 if lin+col == a+b:
                     if tab[a][b] == ponto:
                         cont_diag += 1
-
                 if lin-col == a-b:
                     if tab[a][b] == ponto:
                         cont_diag2 += 1
