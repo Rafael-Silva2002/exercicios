@@ -32,10 +32,7 @@ while i != 9 and cont_col != 3 and cont_col2 != 3 and cont_diag != 3 and cont_di
         print()
 
     if i > 3:
-        cont_col = 0
-        cont_col2 = 0
-        cont_diag = 0
-        cont_diag2 = 0
+        cont_col = cont_col2 = cont_diag = cont_diag2 = 0
         for a in range(3):
             for b in range(3):
                 if a == lin:
